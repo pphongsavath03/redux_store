@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mernshopping', {
-  useNewUrlParser: true,
+  useNewUrlParser: false,
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false
